@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <title>AOMORI-s-</title>
+ <meta name="description" content="ページの紹介文">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <link href="css.css" rel="stylesheet" type="text/css">
+ <script src="./jquery-3.4.1.min.js"></script>
+ <script src="./script.js"></script>
+</head>
+
+
+<body>
+ <div id ="header">
+ </div>
+<div align="center">
+<img src="img/main.jpg" alt="">
+</div>
+
+ <div id="left">
+ <ul id="slide_wrapp">
+  <li class="slide_item">
+    <img src="./img/01c.jpg" alt="img1" onload="sliderStart()">
+  </li>
+  <li class="slide_item">
+    <img src="./img/02c.jpg"alt=""alt="img2">
+  </li>
+  <li class="slide_item">
+    <img src="./img/02c.jpg"alt="">
+  </li>
+ </ul>
+ </div>
+
+ <div id ="center">
+ <canvas id="my_chart">
+ </canvas>
+ <script 
+  scr="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js">
+ </script> 
+ <script>
+ var ctx = document.getElementById("my_chart");
+ var myChart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels: ["M", "T", "W", "T", "F", "S", "S"],
+    datasets: [{
+      label: 'apples',
+      backgroundColor: "rgba(153,255,51,0.4)",
+      borderColor: "rgba(153,255,51,1)",
+      data: [12, 19, 3, 17, 28, 24, 7]
+    }, {
+      label: 'oranges',
+      backgroundColor: "rgba(255,153,0,0.4)",
+      borderColor: "rgba(255,153,0,1)",
+      data: [30, 29, 5, 5, 20, 3, 10]
+    }]
+  }
+ });
+ </script>
+ </div>
+
+ <div id="right"> 
+   <ul id="slide2"> 
+   <li><a href="./img/01c.jpg"><img src="./img/01c.jpg"alt="" width="175px" height="550"></a></li>
+   <li><a href="./img/02c.jpg"><img src="./img/02c.jpg"alt="" width="175px" height="550"></a></li>
+   <li><a href="./img/03c.jpg"><img src="./img/03c.jpg"alt="" width="175px" height="550"></a></li>
+   <li><a href="./img/04c.jpg"><img src="./img/04c.jpg"alt="" width="175px" height="550"></a></li>
+   <li><a href="./img/05c.jpg"><img src="./img/05c.jpg"alt="" width="175px" height="550"></a></li>
+   <li><a href="./img/06c.jpg"><img src="./img/06c.jpg"alt="" width="175px" height="550"></a></li>
+   <li><a href="./img/07c.jpg"><img src="./img/07c.jpg"alt="" width="175px" height="550"></a></li>
+   <li><a href="./img/08c.jpg"><img src="./img/08c.jpg"alt="" width="175px" height="550"></a></li>
+   </ul>
+ </div>
+
+ <footer>
+
+ </div>
+</body>
+
+
+
+</html>
