@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang ="ja">
+<head>
+<script type="text/javascript" src="js/jQuery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/fixmenu.js"></script>
+<script type="text/javascript" src="js/three.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/wrap.css">
+<link rel="stylesheet" href="css/set2.css">
+</head>
+<body id="top" style="background: url(***.gif) fixed;">
+	<header>
+	<aside id="mainimg">
+	<img src="images/header.png" alt="">
+	</aside>
+	</header>
+	
+	<nav id="menubar" class="nav-fix-pos">
+	<ul class="inner">
+	<li><a href="index.html">ホーム<span>Home</span></a></li>
+	<li><a href="club.html">部・サークル<span>club</span></a></li>
+	<li><a href="map.html">キャンパスマップ<span>Canpasmap</span></a></li>
+	<li><a href="link.html">リンク<span>Link</span></a></li>
+	</ul>
+	</nav>
+	
+	<div id="contents">
+	<div class="inner">
+	<div id="remain2">
+	<div class="list">
+	<h3>部・サークル</h3>
+	<div class="grid">
+		<figure class="effect-julia">
+		<img src="images/select_s.jpg" alt="体育会"/>
+		<figcaption>
+		<h2>体育会系<span>Sports club</span></h2>
+		<a href="clublist1.html">View more</a>
+		</figcaption>			
+		</figure>
+		<figure class="effect-julia">
+		<img src="images/select_b.jpg" alt="文化会"/>
+		<figcaption>
+		<h2>文化会系<span>Culture club</span></h2>
+		<a href="clublist2.html">View more</a>
+		</figcaption>			
+		</figure>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<footer>
+	<div id="footermenu" class="inner">
+	<ul>
+	<li class="title">タイトル</li>
+	<li><a href="#">メニューサンプル</a></li>
+	<li><a href="#">メニューサンプル</a></li>
+	</ul>
+	<ul>
+	<li class="title">タイトル</li>
+	<li><a href="#">メニューサンプル</a></li>
+	<li><a href="#">メニューサンプル</a></li>
+	</ul>
+	<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+	</div>
+	</footer>
+	</div>
+		<!--/#container-->
+
+	<!--メニュー開閉ボタン-->
+	<div id="menubar_hdr" class="close"></div>
+	<!--メニューの開閉処理条件設定　800px以下-->
+	<script>
+	if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+	}
+	</script>
+</body>
+</html>
