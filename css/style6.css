@@ -1,0 +1,258 @@
+﻿/*スマホ用css*/
+@media screen and (max-width: 360px) { /*ウィンドウ幅が最大360pxまでの場合に適用*/
+          main {
+          
+          }
+/*大まかな区分け*/
+body, h1, p {
+margin: 0;
+padding: 0;
+}
+header,div#main, nav, footer {
+padding: 8px;
+}
+
+div#content {
+
+width: 760px;
+overflow: hidden;
+}
+
+div#main {
+
+width: 584px;
+float: right;
+}
+/*左スライド*/
+nav {
+width: 144px;
+float: left;
+}
+
+nav a:link {
+color: #ffffff;
+}
+
+nav a:visited {
+color: #ccffcc;
+}
+
+nav a:hover {
+color: #339933;
+}
+
+nav li {
+line-height: 2em;
+}
+/*メイン*/
+body{
+margin: 0;
+padding: 0;
+}
+h1, p {
+margin: 0;
+padding: 0;
+}
+div#main, nav, footer {
+padding: 8px;
+}
+
+div#content {
+width: 100%;
+overflow: hidden;
+}
+
+div#main {
+background: #191970;
+width: 70%;
+height:800px;
+width: auto;/*float解除*/
+float: none;/*float解除*/
+display:none; /*非表示*/
+}
+
+nav {
+width: 30%;
+height:800px;
+width: auto;/*float解除*/
+float: none;/*float解除*/
+}
+
+nav a:link {
+color: #ffffff;
+}
+
+nav a:visited {
+color: #000000;
+}
+
+nav a:hover {
+color: #339933;
+}
+
+nav li {
+line-height: 2em;
+}
+footer {
+color: #ffffff;
+}
+/*リスト横並び*/
+.list {
+	position: relative;
+	overflow: hidden; /* ulでリスト全体を右に50%移動している分幅が広がりスクロールバーが表示されるのを防ぐ */
+}
+ 
+.list ul {
+	position: relative;
+	height:100%;
+	width: 100%;
+	float: left;
+	margin: 0px;
+}
+ 
+.list ul li {
+	position: relative;
+	
+	float: left;
+	margin-left: 10px;
+}
+
+/*リストデザイン*/
+    /*h1の詳細*/
+    h1 {
+    color: #ffffff;
+    }
+    /*h2の詳細*/
+    h2 {
+    color: #339933;
+    }
+    p {
+    line-height: 2em;
+    }
+    p.hl {
+    font-size: 1.25em;
+    color: #ffffff;
+    }
+	ul.list-type01{
+      font: 14px/1.6 'arial narrow', sans-serif;
+      list-style: none;
+      padding: 0.5em 0.7em;
+      border: solid 2px #5c9ee7;
+      border-radius: 5px;
+    }
+    ul.list-type01 li{
+      position: relative;
+      color: #5c9ee7;
+      margin-bottom:5px;
+      padding-left:5px;
+      line-height: 30px;
+      font-size: 15px;
+      font-weight: bold;
+      /*アンダーバー
+      border-bottom: 1px dashed #5c9ee7;
+      */
+    }
+    ul.list-type1 li:last-child{
+      border:none;
+      margin: 0;
+    }
+    ul.list-type1 li:before{
+      font-family: FontAwesome;
+      content: "\f054";
+      position: absolute;
+      right: 5px;
+      font-size: 1.2em;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+    }
+    ul.list-type1 li:hover:before{
+      -webkit-transform:scale(1.5);
+      transform:scale(1.5);
+      background-position: bottom;
+      color: red;
+    }
+/*リストデザイン２*/
+/*h1の詳細*/
+h1 {
+color: #000000;
+}
+ul.cp_list {
+	padding: 0.5em;
+	list-style: none;
+}
+ul.cp_list li {
+	position: relative;
+	padding: 0.5em 1em 0.5em 2.3em;
+	margin-bottom:5px;
+	border-bottom: 1px solid rgba(255,143,0,1);
+}
+ul.cp_list li:after,
+ul.cp_list li:before {
+	content:'';
+	position: absolute;
+	transform: rotate(45deg);
+}
+ul.cp_list li:before {
+	top: 0.7em;
+	left: 0.2em;
+	width: 12px;
+	height: 12px;
+	border:2px solid rgba(255,143,0,1);
+}
+ul.cp_list li:after {
+	top: 0.9em;
+	left: 0.7em;
+	width: 14px;
+	height: 14px;
+	background: rgba(255,143,0,0.5);
+	transform: rotate(60deg);
+}
+/*スライド*/
+ 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ 
+body { font-family: sans-serif; }
+ 
+.gallery {
+  background: #EEE;
+}
+ 
+.gallery-cell {
+  width: 60%;
+  height: 760px;
+  margin-right: 20px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+ 
+/* セルナンバー */
+/*.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}*/
+/*枠の設定*/
+.box2 {
+    padding: 0.1em 0.1em;
+    margin: 0.2em 0.1em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #00ffff;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    /*
+    width: 530px;/*幅*/
+    height:750px;
+    */
+}
+.box2 p {
+    margin: 0; 
+    padding: 0;
+}
+}
